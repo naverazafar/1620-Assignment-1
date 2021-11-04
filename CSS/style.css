@@ -58,7 +58,7 @@ body {
     grid-column: 1;
     align-self: center;
     justify-self: center;
-    background-color: #817c9c;
+    background-color: #3e8fb0;
     padding: 25px;
 }
 
@@ -68,7 +68,7 @@ body {
     grid-row: 1;
     align-self: center;
     justify-self: center;
-    background-color: #817c9c;
+    background-color: #3e8fb0;
     padding: 25px;
 }
 
@@ -78,6 +78,102 @@ body {
     grid-row: 1;
     align-self: center;
     justify-self: center;
-    background-color: #817c9c;
+    background-color: #3e8fb0;
     padding: 25px;
+}
+
+.newcontact {
+    display: inline-grid;
+    padding-left: 50px;
+    grid-template-columns: 15rem 15rem auto;
+    grid-template-rows: 4rem 3rem 3rem 3rem 3rem auto;
+    grid-template-areas: 
+        "image" 
+        "name"
+        "phone" "plus1"
+        "address" "plus2"
+        "email" "plus3"
+        "save" "cancel";
+    gap:10px;
+}
+
+.image {
+    grid-area: image;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.plus1 {
+    font-size: 30px;
+    grid-area: plus;
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+}
+
+.plus2 {
+    font-size: 30px;
+    grid-area: plus;
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
+}
+
+.plus3 {
+    font-size: 30px;
+    grid-area: plus;
+    grid-column: 2;
+    grid-row: 5;
+    align-self: center;
+}
+
+.name {
+    grid-area: name;
+    grid-row: 2;
+    align-self: center;
+    border: 1px #393552 solid;
+    width: 100%;
+}
+
+.phone {
+    grid-area: phone;
+    grid-row: 3;
+    align-self: center;
+    border: 1px #393552 solid;
+    width: 100%;
+}
+
+.address {
+    grid-area: address;
+    grid-row: 4;
+    align-self: center;
+    border: 1px #393552 solid;
+    width: 100%;
+}
+
+.email {
+    grid-area: email;
+    grid-row: 5;
+    align-self: center;
+    border: 1px #393552 solid;
+    width: 100%;
+}
+
+.save {
+    grid-area: save;
+    grid-row: 6;
+    justify-self: flex-start;
+    align-self: center;
+    border: 1px #393552 solid;
+    width: 45%;
+}
+
+.cancel {
+    grid-area: cancel;
+    grid-row: 6;
+    justify-self: flex-end;
+    align-self: center;
+    border: 1px #393552 solid;
+    width: 45%;
 }
