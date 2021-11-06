@@ -165,8 +165,6 @@ body {
     grid-row: 6;
     justify-self: flex-start;
     align-self: center;
-    border: 1px #393552 solid;
-    width: 45%;
 }
 
 .cancel {
@@ -174,6 +172,49 @@ body {
     grid-row: 6;
     justify-self: flex-end;
     align-self: center;
-    border: 1px #393552 solid;
-    width: 45%;
+    width: 50%;
+}
+
+.fav {
+    display: inline-grid;
+    padding-left: 50px;
+    grid-template-columns: 12rem auto;
+    grid-template-rows: 4rem 2rem 2rem 2rem 4rem 3rem auto;
+    grid-template-areas: 
+        "image" 
+        "favname"
+        "favemail"
+        "favcell"
+        "favaddress"
+        "edit" "close";
+    gap:10px;
+    align-items: center;
+}
+
+.favname{
+    grid-area: favname;
+}
+
+.favemail {
+    grid-area: favemail;
+}
+
+.favcell {
+    grid-area: favcell;
+}
+
+.favaddress {
+    grid-area: favaddress;
+}
+
+.edit {
+    grid-area: edit;
+    grid-row: 6;
+    justify-self: flex-start;
+}
+
+.close {
+    grid-area: close;
+    grid-row: 6;
+    justify-self: center;
 }
