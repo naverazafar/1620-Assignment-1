@@ -132,32 +132,24 @@ body {
     grid-area: name;
     grid-row: 2;
     align-self: center;
-    border: 1px #393552 solid;
-    width: 100%;
 }
 
 .phone {
     grid-area: phone;
     grid-row: 3;
     align-self: center;
-    border: 1px #393552 solid;
-    width: 100%;
 }
 
 .address {
     grid-area: address;
     grid-row: 4;
     align-self: center;
-    border: 1px #393552 solid;
-    width: 100%;
 }
 
 .email {
     grid-area: email;
     grid-row: 5;
     align-self: center;
-    border: 1px #393552 solid;
-    width: 100%;
 }
 
 .save {
