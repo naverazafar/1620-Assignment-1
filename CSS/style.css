@@ -8,52 +8,69 @@
 
 body {
     background-color: #9ccfd8;
+    padding: 0%;
 }
 
 .container {
     display: inline-grid;
-    height: 100vh;
+    padding-top: 50px;
+    height: 100%;
     grid-template-columns: 20rem auto;
-    grid-template-rows: 5rem 3rem 3rem 100vh;
+    grid-template-rows: 6rem 3rem 3rem 3rem 100vh;
     grid-template-areas: 
         "header" 
+        "home"
         "button1" 
         "button2"
         "emptynav";
+    background-color: #3e8fb0;
+    justify-items: center;
 }
 
 .header {
     padding-left: 50px;
     grid-area: header;
-    background-color: #3e8fb0;
     grid-row: 1;
     padding: 30px;
+    justify-self: flex-start;
+    font-size: 25px;
+}
+
+.home {
+    grid-area: home;
+    grid-row: 2;
+    padding: 25px;
+    font-size: 18px;
 }
 
 .button1 {
     grid-area: button1;
-    background-color: #3e8fb0;
-    grid-row: 2;
+    grid-row: 3;
     padding: 25px;
+    font-size: 18px;
 }
 
 .button2 {
     grid-area: button2;
-    background-color: #3e8fb0;
-    grid-row: 3;
+    grid-row: 4;
     padding: 25px;
+    font-size: 18px;
 }
 
-.emptynav {
-    grid-area: emptynav;
-    background-color: #3e8fb0;
-    grid-row: 4;
+a {
+    color: black;
 }
+
+a:hover {
+    text-decoration: black;
+}
+
 
 .contacts {
     display: inline-grid;
     padding-left: 100px;
-    height: 100vh;
+    padding-top: 50px;
+    height: 100%;
     grid-template-columns: 10rem 12rem 10rem auto;
     grid-template-rows: 5rem 5rem 5rem auto;
     grid-template-areas: 
